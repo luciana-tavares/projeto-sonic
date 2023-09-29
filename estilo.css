@@ -1,0 +1,151 @@
+html{
+    font-family: sans-serif;
+}
+
+.header{
+    text-align: center;
+    margin: auto;
+    background-color: #000000;
+}
+
+.header_logo{
+    width: 5em;
+    height: auto;
+}
+
+#hamburguer {
+    background-color:#4c4cc9;
+    color: #000000;
+    display: block;
+    text-align: center;
+    padding: 0.3em;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.header_nav{
+    background-color: #000000;
+    display: none;
+}
+
+.header_nav.show {
+    display: block;
+}
+
+ul{
+    margin: 0;
+}
+
+.header_nav ul{
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: .8em;
+}
+
+.header_nav a{
+    color: #4c4cc9;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+
+.header_nav a:hover {
+    background-color: color-mix(in srgb,#4c4cc9,#fff 50%);
+    color: #000000; 
+
+}
+
+
+@media screen and (min-width: 48em) { /* 768px maior que */
+    
+    #hamburguer {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #000000;
+    }
+
+    .header_logo {
+        margin-left: 2em;        
+    }
+
+    .header_nav {
+        display: block;
+    }
+
+    .header_nav ul {
+        margin-right: 2em;
+        font-size: .9em;
+    }
+
+    .header_nav li {
+        display: inline-block;
+    }
+
+    .header_nav a {
+        border-radius: 5px;
+    }
+
+    .header_nav a:hover {
+        background-color: #2626ca;
+        color: #fff;
+    }
+    
+}
+
+body {
+    margin: 0;
+    padding: 0; 
+}
+
+.fundo_main {
+    background-image: url(imagens/sonic_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+footer {
+    background-color: #4c4cc9;
+    color: #fff;
+    padding: 1em; 
+    text-align: center;
+    font-size: .8em;  
+}
+
+.rodape_icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rodape-icone {
+    margin: 0 10px;
+}
+
+.rodape-icone img {
+    width: 40px;
+    height: 40px;
+    display: flexbox;
+}
+
+@media screen and (max-width: 48em) {
+    .rodape_icons {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .rodape-icone {
+      margin: 10px 0;
+    }
+  }
+
+
+
